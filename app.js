@@ -63,9 +63,25 @@ const schoolBook1 = new SchoolBook('storia di ieri', 'alberto angela', '03/07/20
 
 // GESTIRE TIPI DIVERSI --------------------------
 
-const libraryCollection = [book2, book3, magazine1, schoolBook1];  // sono tutti tipi diversi ma hanno un parente in comune 
+// const libraryCollection = [book2, book3, magazine1, schoolBook1];  // sono tutti tipi diversi ma hanno un parente in comune 
 
 
-for (const pub of libraryCollection) {     // finchè gli oggetti hanno un genitore in comune posso gestirli in uno stesso array, si dice polimorfismo
-   console.log(pub.toString());
-}
+// for (const pub of libraryCollection) {     // finchè gli oggetti hanno un genitore in comune posso gestirli in uno stesso array, si dice polimorfismo
+//    console.log(pub.toString());
+// }
+
+
+
+const library1 = new Library([book2, book3, magazine1, schoolBook1]);  // creiamo oggetto library
+
+library1.deletePublication(3); // per eliminare elemento a indice 3, (schoolBook1)
+
+const book4 = new Book('se questo è un uomo', 'primo levi', '12/05/1998', 'adephi');  // creiamo un nuovo book
+
+library1.addPublication(book4);
+
+console.log(library1);
+
+const gui = new GUI();
+
+gui.start();
