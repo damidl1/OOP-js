@@ -82,6 +82,56 @@ library1.addPublication(book4);
 
 console.log(library1);
 
+
+
+
 const gui = new GUI();
 
 gui.start();
+
+
+
+// JSON ------------------------------------------------------------
+
+
+// const student1 = {
+//    name: 'Bryan',
+//    yob: 1994,
+//    isMarried: false,
+// }
+
+// console.log(student1);
+
+// const student1JSON = JSON.stringify(student1);  // prende oggetto json e lo trasforma in una stringa
+
+// console.log(student1JSON);
+
+// const stringArray = ['qui', 'quo', 'qua'];
+
+// const stringArrayJSON = JSON.stringify(stringArray);
+
+// console.log(stringArrayJSON);
+
+
+// const student2 = {
+//    name: 'Francesca',
+//    yob: 1989,
+//    isMarried: false,
+// }
+
+// const studentArray = [student1, student2];
+
+// const studentsArrayJSON = JSON.stringify(studentArray);
+
+// console.log(studentsArrayJSON);
+
+
+
+// riconvertire json in oggetto javascript
+
+
+// const jsonString = '[{"name":"Bryan","yob":1994,"isMarried":false},{"name":"Francesca","yob":1989,"isMarried":false}]'
+
+// const studentsArray = JSON.parse(jsonString);  // json.parse per trasformare in oggetto js
+
+// console.log(studentsArray);
